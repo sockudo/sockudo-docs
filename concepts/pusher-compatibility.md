@@ -81,4 +81,4 @@ While Sockudo strives for full compatibility, there might be minor differences o
 * **Scale and Infrastructure**: The commercial Pusher service manages a global infrastructure. With Sockudo, you are responsible for deploying, scaling, and managing your own server instances.
 * **Specific Error Codes/Messages**: While generally compatible, some error codes or descriptive messages might vary.
 
-Always test your specific application use cases thoroughly when migrating to or adopting Sockudo. If you find any significant compatibility issues, please report them on the [Sockudo GitHub repository](https://github.com/RustNSparks/sockudo/issues).
+Always test your specific application use cases thoroughly when migrating to or adopting Sockudo. If you find any significant compatibility issues, please report them on the [Sockudo GitHub repository](https://github.com/sockudo/sockudo/issues).

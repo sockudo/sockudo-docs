@@ -26,7 +26,7 @@ The fastest way to get Sockudo running is with Docker:
 
 ```bash
 # Clone the repository
-git clone https://github.com/RustNSparks/sockudo.git
+git clone https://github.com/sockudo/sockudo.git
 cd sockudo
 
 # Copy environment variables template
@@ -55,7 +55,7 @@ Follow these steps to download and build Sockudo from source:
 
     Open your terminal and clone the Sockudo repository from GitHub:
     ```bash
-    git clone https://github.com/RustNSparks/sockudo.git
+    git clone https://github.com/sockudo/sockudo.git
     cd sockudo
     ```
 
@@ -69,7 +69,7 @@ Follow these steps to download and build Sockudo from source:
 
 3.  **Prebuilt Binaries**
 
-    Alternatively, prebuilt binaries are available for download on the [Releases page](https://github.com/RustNSparks/sockudo/releases).
+    Alternatively, prebuilt binaries are available for download on the [Releases page](https://github.com/sockudo/sockudo/releases).
 
 ## Running Sockudo
 

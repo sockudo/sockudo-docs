@@ -6,7 +6,7 @@ Thank you for your interest in contributing to Sockudo! We welcome contributions
 
 There are many ways to contribute:
 
-* **Reporting Bugs**: If you find a bug, please open an issue on our [GitHub repository](https://github.com/RustNSparks/sockudo/issues). Include as much detail as possible:
+* **Reporting Bugs**: If you find a bug, please open an issue on our [GitHub repository](https://github.com/sockudo/sockudo/issues). Include as much detail as possible:
     * Sockudo version (or commit hash).
     * Your configuration (censor secrets).
     * Steps to reproduce the bug.
@@ -35,7 +35,7 @@ There are many ways to contribute:
     * Any services Sockudo might depend on for certain features (e.g., Redis, NATS, MySQL for testing specific adapters or app managers).
 2.  **Clone the repository**:
     ```bash
-    git clone [https://github.com/RustNSparks/sockudo.git](https://github.com/RustNSparks/sockudo.git)
+    git clone [https://github.com/sockudo/sockudo.git](https://github.com/sockudo/sockudo.git)
     cd sockudo
     ```
 3.  **Build**:

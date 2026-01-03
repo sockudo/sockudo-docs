@@ -430,7 +430,7 @@ Before seeking help, collect:
 - Client library and version information
 
 ### Check Resources
-1. **GitHub Issues**: [https://github.com/RustNSparks/sockudo/issues](https://github.com/RustNSparks/sockudo/issues)
+1. **GitHub Issues**: [https://github.com/sockudo/sockudo/issues](https://github.com/sockudo/sockudo/issues)
 2. **Documentation**: Review all relevant configuration guides
 3. **Community Forums**: Check if others have faced similar issues
 

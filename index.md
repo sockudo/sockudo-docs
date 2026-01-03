@@ -20,7 +20,7 @@ hero:
       link: /guide/performance-benchmarks
     - theme: alt
       text: GitHub Repository
-      link: https://github.com/RustNSparks/sockudo
+      link: https://github.com/sockudo/sockudo
 
 features:
   - icon: ⚡
@@ -119,7 +119,7 @@ window.Echo = new Echo({
 **Quick Installation:**
 ```bash
 # Download and run in seconds
-wget https://github.com/RustNSparks/sockudo/releases/latest/download/sockudo-linux
+wget https://github.com/sockudo/sockudo/releases/latest/download/sockudo-linux
 chmod +x sockudo-linux
 ./sockudo-linux --config config.json
 ```
@@ -232,7 +232,7 @@ Self-hosted with full control:
 ### 1. **Download Sockudo**
 ```bash
 # Linux/macOS
-curl -L https://github.com/RustNSparks/sockudo/releases/latest/download/sockudo-linux -o sockudo
+curl -L https://github.com/sockudo/sockudo/releases/latest/download/sockudo-linux -o sockudo
 chmod +x sockudo
 
 # Or use Docker
@@ -293,12 +293,12 @@ curl -X POST http://localhost:6001/apps/app-1/events \
 
 ### 👥 **Active Community**
 - [**Discord Server**](https://discord.gg/MRhmYg68RY) - Get help and share experiences
-- [**GitHub Discussions**](https://github.com/RustNSparks/sockudo/discussions) - Feature requests and technical discussions
+- [**GitHub Discussions**](https://github.com/sockudo/sockudo/discussions) - Feature requests and technical discussions
 - [**Twitter Updates**](https://x.com/sockudorealtime) - Latest news and updates
 
 ### 🐛 **Issue Reporting**
 Found a bug or need a feature? We're responsive to community feedback:
-- [**GitHub Issues**](https://github.com/RustNSparks/sockudo/issues) - Bug reports and feature requests
+- [**GitHub Issues**](https://github.com/sockudo/sockudo/issues) - Bug reports and feature requests
 - [**Security Reports**](mailto:security@sockudo.com) - Responsible disclosure for security issues
 
 ## What Makes Sockudo Different?
@@ -332,7 +332,7 @@ Join thousands of developers already building faster real-time applications with
   <a href="/guide/performance-benchmarks" class="action-button secondary">
     📊 View Benchmarks
   </a>
-  <a href="https://github.com/RustNSparks/sockudo" class="action-button secondary">
+  <a href="https://github.com/sockudo/sockudo" class="action-button secondary">
     ⭐ Star on GitHub
   </a>
 </div>

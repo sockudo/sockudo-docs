@@ -3,62 +3,105 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Sockudo Documentation",
   titleTemplate: ":title | Sockudo - High-Performance WebSocket Server",
-  description: "Complete documentation for Sockudo, a high-performance Rust WebSocket server with Pusher compatibility. Build real-time applications with sub-5ms latency.",
-  
+  description:
+    "Complete documentation for Sockudo, a high-performance Rust WebSocket server with Pusher compatibility. Build real-time applications with sub-5ms latency.",
+
   // Enhanced meta tags
   head: [
-     ['script', { 
-      src: 'https://cdn.databuddy.cc/databuddy.js',
-      'data-client-id': '5aFTKbNqr8XkSznh3u3F3',
-      'data-enable-batching': 'true',
-      crossorigin: 'anonymous',
-      async: 'true' // boolean attributes should be strings
-    }],
-        // Existing favicon
+    [
+      "script",
+      {
+        src: "https://cdn.databuddy.cc/databuddy.js",
+        "data-client-id": "5aFTKbNqr8XkSznh3u3F3",
+        "data-enable-batching": "true",
+        crossorigin: "anonymous",
+        async: "true", // boolean attributes should be strings
+      },
+    ],
+    // Existing favicon
     ["link", { rel: "icon", href: "/favicon.ico" }],
-    
+
     // SEO meta tags
-    ["meta", { name: "keywords", content: "websocket server, pusher alternative, real-time messaging, rust websocket, high performance websocket, laravel echo, pusher compatible" }],
-    ["meta", { name: "author", content: "RustNSparks" }],
+    [
+      "meta",
+      {
+        name: "keywords",
+        content:
+          "websocket server, pusher alternative, real-time messaging, rust websocket, high performance websocket, laravel echo, pusher compatible",
+      },
+    ],
+    ["meta", { name: "author", content: "sockudo" }],
     ["meta", { name: "robots", content: "index, follow" }],
-    
+
     // Open Graph
     ["meta", { property: "og:type", content: "website" }],
     ["meta", { property: "og:site_name", content: "Sockudo Documentation" }],
-    ["meta", { property: "og:title", content: "Sockudo - High-Performance WebSocket Server Documentation" }],
-    ["meta", { property: "og:description", content: "Complete documentation for Sockudo, a high-performance Rust WebSocket server with Pusher compatibility." }],
+    [
+      "meta",
+      {
+        property: "og:title",
+        content: "Sockudo - High-Performance WebSocket Server Documentation",
+      },
+    ],
+    [
+      "meta",
+      {
+        property: "og:description",
+        content:
+          "Complete documentation for Sockudo, a high-performance Rust WebSocket server with Pusher compatibility.",
+      },
+    ],
     ["meta", { property: "og:url", content: "https://sockudo.app" }],
-    
+
     // Twitter Card
     ["meta", { name: "twitter:card", content: "summary_large_image" }],
     ["meta", { name: "twitter:site", content: "@sockudorealtime" }],
-    ["meta", { name: "twitter:title", content: "Sockudo WebSocket Server Documentation" }],
-    ["meta", { name: "twitter:description", content: "High-performance Rust WebSocket server with Pusher compatibility. 6.5x faster than alternatives." }],
-    
+    [
+      "meta",
+      {
+        name: "twitter:title",
+        content: "Sockudo WebSocket Server Documentation",
+      },
+    ],
+    [
+      "meta",
+      {
+        name: "twitter:description",
+        content:
+          "High-performance Rust WebSocket server with Pusher compatibility. 6.5x faster than alternatives.",
+      },
+    ],
+
     // Structured data for software
-    ["script", { type: "application/ld+json" }, JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "Sockudo",
-      "description": "High-performance WebSocket server built in Rust with Pusher protocol compatibility",
-      "applicationCategory": "DeveloperApplication",
-      "operatingSystem": "Linux, macOS, Windows",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "RustNSparks",
-        "url": "https://github.com/RustNSparks"
-      },
-      "url": "https://sockudo.app",
-      "sameAs": [
-        "https://github.com/RustNSparks/sockudo",
-        "https://twitter.com/sockudorealtime"
-      ]
-    })]
+    [
+      "script",
+      { type: "application/ld+json" },
+      JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        name: "Sockudo",
+        description:
+          "High-performance WebSocket server built in Rust with Pusher protocol compatibility",
+        applicationCategory: "DeveloperApplication",
+        operatingSystem: "Linux, macOS, Windows",
+        offers: {
+          "@type": "Offer",
+          price: "0",
+          priceCurrency: "USD",
+        },
+        author: {
+          "@type": "Organization",
+          name: "Sockudo",
+          url: "https://github.com/sockudo",
+        },
+        url: "https://sockudo.app",
+        sameAs: [
+          "https://github.com/sockudo/sockudo",
+          "https://twitter.com/sockudorealtime",
+        ],
+      }),
+    ],
+    sockudosockudosockudo,
   ],
 
   // SEO enhancements
@@ -66,10 +109,10 @@ export default defineConfig({
   lang: "en-US",
   lastUpdated: true,
   cleanUrls: true,
-  
+
   // Generate sitemap
   sitemap: {
-    hostname: "https://sockudo.app"
+    hostname: "https://sockudo.app",
   },
 
   themeConfig: {
@@ -86,7 +129,10 @@ export default defineConfig({
       {
         text: "Resources",
         items: [
-          { text: "GitHub Repository", link: "https://github.com/RustNSparks/sockudo" },
+          {
+            text: "GitHub Repository",
+            link: "https://github.com/sockudo/sockudo",
+          },
           { text: "Discord Community", link: "https://discord.gg/MRhmYg68RY" },
           { text: "Twitter Updates", link: "https://x.com/sockudorealtime" },
         ],
@@ -101,7 +147,7 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Introduction", link: "/guide/" },
-            { text: "Quick Start Guide", link: "/guide/getting-started" }
+            { text: "Quick Start Guide", link: "/guide/getting-started" },
           ],
         },
         {
@@ -109,13 +155,22 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Configuration Overview", link: "/guide/configuration" },
-            { text: "Server Options", link: "/guide/configuration/server-options" },
+            {
+              text: "Server Options",
+              link: "/guide/configuration/server-options",
+            },
             { text: "Adapter Setup", link: "/guide/configuration/adapter" },
             { text: "App Manager", link: "/guide/configuration/app-manager" },
             { text: "Cache Configuration", link: "/guide/configuration/cache" },
             { text: "Queue Setup", link: "/guide/configuration/queue" },
-            { text: "Metrics & Monitoring", link: "/guide/configuration/metrics" },
-            { text: "Rate Limiting", link: "/guide/configuration/rate-limiter" },
+            {
+              text: "Metrics & Monitoring",
+              link: "/guide/configuration/metrics",
+            },
+            {
+              text: "Rate Limiting",
+              link: "/guide/configuration/rate-limiter",
+            },
             { text: "SSL/TLS Setup", link: "/guide/configuration/ssl" },
           ],
         },
@@ -126,7 +181,10 @@ export default defineConfig({
             { text: "Production Deployment", link: "/guide/deployment" },
             { text: "Performance Monitoring", link: "/guide/monitoring" },
             { text: "SSL Configuration", link: "/guide/ssl-configuration" },
-            { text: "Performance Benchmarks", link: "/guide/performance-benchmarks" },
+            {
+              text: "Performance Benchmarks",
+              link: "/guide/performance-benchmarks",
+            },
           ],
         },
       ],
@@ -136,7 +194,10 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: "Architecture Overview", link: "/concepts/architecture" },
-            { text: "Pusher Compatibility", link: "/concepts/pusher-compatibility" },
+            {
+              text: "Pusher Compatibility",
+              link: "/concepts/pusher-compatibility",
+            },
             { text: "Security Model", link: "/concepts/security" },
             { text: "Scaling Strategies", link: "/concepts/scaling" },
           ],
@@ -165,26 +226,29 @@ export default defineConfig({
             { text: "Integration Guide", link: "/integrations/" },
             { text: "Laravel Echo Setup", link: "/integrations/laravel-echo" },
             { text: "PusherJS Integration", link: "/integrations/pusher-js" },
-            { text: "Mobile & Other Clients", link: "/integrations/other-clients" }
-          ]
+            {
+              text: "Mobile & Other Clients",
+              link: "/integrations/other-clients",
+            },
+          ],
         },
       ],
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/RustNSparks/sockudo" },
+      { icon: "github", link: "https://github.com/sockudo/sockudo" },
       { icon: "discord", link: "https://discord.gg/MRhmYg68RY" },
       { icon: "x", link: "https://x.com/sockudorealtime" },
     ],
 
     editLink: {
-      pattern: "https://github.com/RustNSparks/sockudo/edit/main/docs/:path",
+      pattern: "https://github.com/sockudo/sockudo/edit/main/docs/:path",
       text: "Improve this page on GitHub",
     },
 
     footer: {
       message: "Released under the MIT License.",
-      copyright: `Copyright © 2025-${new Date().getFullYear()} RustNSparks & Contributors`,
+      copyright: `Copyright © 2025-${new Date().getFullYear()} Sockudo & Contributors`,
     },
 
     search: {
