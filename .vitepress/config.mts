@@ -30,7 +30,7 @@ export default defineConfig({
           "websocket server, pusher alternative, real-time messaging, rust websocket, high performance websocket, laravel echo, pusher compatible",
       },
     ],
-    ["meta", { name: "author", content: "sockudo" }],
+    ["meta", { name: "author", content: "Sockudo" }],
     ["meta", { name: "robots", content: "index, follow" }],
 
     // Open Graph
@@ -101,7 +101,6 @@ export default defineConfig({
         ],
       }),
     ],
-    sockudosockudosockudo,
   ],
 
   // SEO enhancements
