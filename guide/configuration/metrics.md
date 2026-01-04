@@ -68,7 +68,7 @@ These settings are applicable if `metrics.driver` is set to `"prometheus"`.
 
 ### `metrics.prometheus.prefix`
 * **JSON Key**: `prefix`
-* **Environment Variable**: `PROMETHEUS_METRICS_PREFIX`
+* **Environment Variable**: `METRICS_PROMETHEUS_PREFIX`
 * **Type**: `string`
 * **Description**: A prefix that will be added to all metric names exposed by Sockudo. Useful for namespacing in a shared Prometheus instance.
 * **Default Value**: `"sockudo_"`
@@ -94,7 +94,7 @@ METRICS_ENABLED=true
 METRICS_DRIVER=prometheus
 METRICS_HOST="0.0.0.0"
 METRICS_PORT=9601
-PROMETHEUS_METRICS_PREFIX="my_company_sockudo_"
+METRICS_PROMETHEUS_PREFIX="my_company_sockudo_"
 ```
 
 ## Available Metrics

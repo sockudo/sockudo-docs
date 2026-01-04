@@ -25,7 +25,7 @@ First, ensure that metrics are enabled in your Sockudo configuration:
 METRICS_ENABLED=true
 METRICS_HOST="0.0.0.0"
 METRICS_PORT=9601
-PROMETHEUS_METRICS_PREFIX="sockudo_"
+METRICS_PROMETHEUS_PREFIX="sockudo_"
 ```
 
 By default, metrics will be available at `http://<metrics_host>:<metrics_port>/metrics` (e.g., `http://localhost:9601/metrics`).

@@ -302,6 +302,8 @@ Enables and configures performance metrics exposure (e.g., Prometheus).
 - `METRICS_ENABLED` - Enable metrics
 - `METRICS_HOST` - Metrics server host
 - `METRICS_PORT` - Metrics server port
+- `METRICS_DRIVER` - Metrics driver
+- `METRICS_PROMETHEUS_PREFIX` - Metrics Prometheus prefix
 
 ### SSL Configuration
 
