@@ -390,7 +390,7 @@ services:
 
 ### Example Grafana Queries
 
-```promql
+```text
 # Active connections per app
 sockudo_connected
 

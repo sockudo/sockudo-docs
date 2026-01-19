@@ -164,7 +164,7 @@ scrape_configs:
 ### Key Dashboard Panels
 
 #### 1. Connection Overview
-```promql
+```text
 # Active connections gauge
 sockudo_connected
 
@@ -176,7 +176,7 @@ sockudo_connected by (app_id)
 ```
 
 #### 2. Message Throughput
-```promql
+```text
 # Messages sent rate
 rate(sockudo_ws_messages_sent_total[5m])
 
@@ -191,7 +191,7 @@ rate(sockudo_socket_received_bytes[5m])
 ```
 
 #### 3. HTTP API Performance
-```promql
+```text
 # HTTP API calls rate
 rate(sockudo_http_calls_received_total[5m])
 
@@ -203,7 +203,7 @@ rate(sockudo_http_transmitted_bytes[5m])
 ```
 
 #### 4. Channel Activity
-```promql
+```text
 # Active channels
 sockudo_active_channels
 
@@ -215,7 +215,7 @@ sockudo_active_channels by (channel_type)
 ```
 
 #### 5. System Health
-```promql
+```text
 # Rate limit triggers
 rate(sockudo_rate_limit_triggered_total[5m])
 
@@ -228,7 +228,7 @@ rate(sockudo_horizontal_adapter_received_requests[5m])
 ```
 
 #### 6. Broadcast Performance (v2.6.1+)
-```promql
+```text
 # Broadcast latency percentiles by recipient count
 histogram_quantile(0.50, rate(sockudo_broadcast_latency_ms_bucket[5m])) by (recipient_count_bucket)
 histogram_quantile(0.95, rate(sockudo_broadcast_latency_ms_bucket[5m])) by (recipient_count_bucket)
@@ -575,7 +575,7 @@ Use node_exporter with Prometheus to monitor system resources:
 
 ### Key System Metrics
 
-```promql
+```text
 # CPU usage
 100 - (avg by (instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
 

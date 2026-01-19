@@ -256,4 +256,55 @@ export default defineConfig({
   },
 
   // Enhanced markdown processing
+  markdown: {
+    languages: [
+      {
+        id: "promql",
+        scopeName: "source.promql",
+        aliases: ["prometheus"],
+        grammar: {
+          patterns: [
+            {
+              name: "keyword.operator.promql",
+              match:
+                "\\b(by|without|on|ignoring|group_left|group_right|bool|offset)\\b",
+            },
+            {
+              name: "keyword.control.promql",
+              match: "\\b(and|or|unless)\\b",
+            },
+            {
+              name: "entity.name.function.promql",
+              match:
+                "\\b(rate|irate|sum|avg|count|min|max|histogram_quantile|increase|delta|absent|ceil|floor|round|changes|deriv|exp|ln|log2|log10|sqrt|abs|absent_over_time|avg_over_time|count_over_time|max_over_time|min_over_time|quantile_over_time|stddev_over_time|stdvar_over_time|sum_over_time|label_join|label_replace|vector|time|timestamp|day_of_month|day_of_week|days_in_month|hour|minute|month|year)\\b",
+            },
+            {
+              name: "constant.numeric.promql",
+              match: "\\b\\d+(\\.\\d+)?([eE][+-]?\\d+)?[smhdwy]?\\b",
+            },
+            {
+              name: "string.quoted.double.promql",
+              match: '"[^"]*"',
+            },
+            {
+              name: "comment.line.promql",
+              match: "#.*$",
+            },
+            {
+              name: "keyword.operator.comparison.promql",
+              match: "(==|!=|<|>|<=|>=)",
+            },
+            {
+              name: "keyword.operator.arithmetic.promql",
+              match: "[+\\-*/%^]",
+            },
+            {
+              name: "variable.other.promql",
+              match: "\\b[a-zA-Z_:][a-zA-Z0-9_:]*\\b",
+            },
+          ],
+        },
+      },
+    ],
+  },
 });
