@@ -1,6 +1,7 @@
 [build]
-command = "npm install && npm run build"
+command = "npm install --omit=optional && npm run build"
 publish = ".output/public"
 
 [build.environment]
 NODE_VERSION = "22"
+NITRO_PRESET = "netlify"
