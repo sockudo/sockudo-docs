@@ -1,8 +1,12 @@
 export default defineNuxtConfig({
-  // Favicon configuration
+  site: {
+    url: "https://sockudo.io",
+  },
+
   app: {
     head: {
       link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],
+      meta: [{ name: "theme-color", content: "#646cff" }],
     },
   },
 });
