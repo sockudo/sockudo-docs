@@ -1,7 +1,8 @@
 [build]
-command = "npm install && npm run build"
+command = "npm install && npm run build 2>&1 | tee build.log || (cat build.log && exit 1)"
 publish = ".output/public"
 
 [build.environment]
 NODE_VERSION = "22"
 NITRO_PRESET = "netlify"
+DEBUG = "*"
