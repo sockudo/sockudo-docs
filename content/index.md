@@ -5,6 +5,11 @@ navigation: false
 seo:
   title: Sockudo Documentation
   description: Production docs for sockudo and @sockudo/client. Setup, API, integrations, and advanced features.
+ogImage:
+  component: Sockudo
+  props:
+    title: "Sockudo Documentation"
+    description: "Drop-in Pusher replacement built in Rust. Own your WebSocket infrastructure with enterprise-grade performance."
 ---
 
 ::u-page-hero

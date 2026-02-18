@@ -3,6 +3,17 @@ export default defineNuxtConfig({
     url: "https://sockudo.io",
   },
 
+  ogImage: {
+    defaults: {
+      component: "Sockudo",
+      props: {
+        title: "Sockudo Documentation",
+        description:
+          "Drop-in Pusher replacement built in Rust. Own your WebSocket infrastructure with enterprise-grade performance.",
+      },
+    },
+  },
+
   app: {
     head: {
       link: [{ rel: "icon", type: "image/svg+xml", href: "/favicon.svg" }],

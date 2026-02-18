@@ -1,82 +1,88 @@
-# Docus Default Starter
+# Sockudo Documentation
 
-> A beautiful, minimal starter for creating documentation with Docus
+> Official documentation for [Sockudo](https://github.com/sockudo/sockudo) — a production-ready, drop-in Pusher replacement built in Rust.
 
-This is the default Docus starter template that provides everything you need to build beautiful documentation sites with Markdown and Vue components.
+**Live site →** [sockudo.io](https://sockudo.io)
 
-> [!TIP]
-> If you're looking for i18n support, check out the [i18n starter](https://github.com/nuxt-themes/docus/tree/main/.starters/i18n).
+## What is Sockudo?
 
-## ✨ Features
+Sockudo is a high-performance WebSocket server that implements the Pusher protocol. It lets you own your realtime infrastructure with enterprise features like delta compression, tag filtering, and multi-region scaling — while keeping full compatibility with existing Pusher clients and server SDKs.
 
-- 🎨 **Beautiful Design** - Clean, modern documentation theme
-- 📱 **Responsive** - Mobile-first responsive design  
-- 🌙 **Dark Mode** - Built-in dark/light mode support
-- 🔍 **Search** - Full-text search functionality
-- 📝 **Markdown Enhanced** - Extended markdown with custom components
-- 🎨 **Customizable** - Easy theming and brand customization
-- ⚡ **Fast** - Optimized for performance with Nuxt 4
-- 🔧 **TypeScript** - Full TypeScript support
+This repository contains the source for the Sockudo documentation site.
 
-## 🚀 Quick Start
+## Local Development
+
+**Prerequisites:** [Bun](https://bun.sh) (or Node.js 22+)
 
 ```bash
+# Clone the repo
+git clone https://github.com/sockudo/sockudo-docs.git
+cd sockudo-docs
+
 # Install dependencies
-npm install
+bun install
 
-# Start development server
-npm run dev
+# Start the dev server
+bun run dev
 ```
 
-Your documentation site will be running at `http://localhost:3000`
+The site will be running at `http://localhost:3000`.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
-my-docs/
-├── content/              # Your markdown content
-│   ├── index.md         # Homepage
-│   ├── 1.getting-started/  # Getting started section
-│   └── 2.essentials/    # Essential documentation
-├── public/              # Static assets
-└── package.json         # Dependencies and scripts
+sockudo-docs/
+├── content/
+│   ├── index.md                  # Homepage
+│   ├── 1.getting-started/        # Installation, first connection, auth, migration
+│   ├── 2.server/                 # Configuration, scaling, security, HTTP API, etc.
+│   ├── 3.client/                 # @sockudo/client usage, features, runtime targets
+│   ├── 4.integrations/           # Laravel Echo, pusher-js, backend SDKs, recipes
+│   └── 5.reference/              # Protocol spec, HTTP endpoints, config reference
+├── components/
+│   └── OgImage/                  # Custom Open Graph image components
+├── public/                       # Static assets (logos, favicons, diagrams)
+├── app.config.ts                 # Docus theme & UI configuration
+├── nuxt.config.ts                # Nuxt / site configuration
+└── netlify.toml                  # Deployment config
 ```
 
-## ⚡ Built with
+All documentation content lives in `content/` as Markdown files. Docus uses the folder numbering prefix (e.g. `1.getting-started`) for navigation ordering — the numbers are stripped from the final URLs.
 
-This starter comes pre-configured with:
+## Writing Docs
 
-- [Nuxt 4](https://nuxt.com) - The web framework
-- [Nuxt Content](https://content.nuxt.com/) - File-based CMS
-- [Nuxt UI](https://ui.nuxt.com) - UI components
-- [Nuxt Image](https://image.nuxt.com/) - Optimized images
-- [Tailwind CSS 4](https://tailwindcss.com/) - Utility-first CSS
-- [Docus Layer](https://www.npmjs.com/package/docus) - Documentation theme
+- Pages are written in Markdown with [MDC syntax](https://content.nuxt.com/usage/markdown) for embedding Vue components.
+- Frontmatter at the top of each `.md` file controls the page title, description, and navigation behavior.
+- Navigation sections are configured via `.navigation.yml` files in each content subdirectory.
+- Static assets like images and diagrams go in `public/`.
 
-## 📖 Documentation
-
-For detailed documentation on customizing your Docus project, visit the [Docus Documentation](https://docus.dev)
-
-### 🤖 AI Assistant Skill
-
-Get started quickly with Docus by adding specialized knowledge to your AI assistant (Cursor, Claude, etc.):
+## Building for Production
 
 ```bash
-npx skills add nuxt-content/docus
+bun run build
 ```
 
-This skill helps you create documentation faster by providing your AI assistant with best practices, MDC component usage, ready-to-use templates, writing guidelines, and configuration tips for Docus. Perfect for quickly scaffolding new documentation projects.
+The output is generated as a static site (configured via `NITRO_PRESET=netlify_static`) and deployed to Netlify.
 
-## 🚀 Deployment
+## Contributing
 
-Build for production:
+Contributions are welcome! Whether it's fixing a typo, improving an explanation, or adding a new guide:
 
-```bash
-npm run build
-```
+1. Fork this repository
+2. Create a branch (`git checkout -b fix/typo-in-scaling-docs`)
+3. Make your changes in `content/`
+4. Run `bun run dev` and verify locally
+5. Open a pull request
 
-The built files will be in the `.output` directory, ready for deployment to any hosting provider that supports Node.js.
+For larger changes (new sections, restructuring), please open an issue first to discuss.
 
-## 📄 License
+## Related Repositories
 
-[MIT License](https://opensource.org/licenses/MIT) 
+| Repo | Description |
+|------|-------------|
+| [sockudo/sockudo](https://github.com/sockudo/sockudo) | The Sockudo server (Rust) |
+| [sockudo/sockudo-js](https://github.com/sockudo/sockudo-js) | Official JavaScript/TypeScript client (`@sockudo/client`) |
+
+## License
+
+[MIT](https://opensource.org/licenses/MIT)
