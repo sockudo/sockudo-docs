@@ -3,7 +3,7 @@ export default defineAppConfig({
     locale: "en",
   },
   seo: {
-    title: "Sockudo Docs",
+    title: "Sockudo — Production-Ready Realtime Infrastructure",
     titleTemplate: "%s · Sockudo Docs",
     description:
       "Documentation for sockudo server and @sockudo/client, a Pusher-compatible realtime stack.",

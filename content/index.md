@@ -3,13 +3,13 @@ title: Sockudo Docs
 description: High-performance Pusher protocol server and official JavaScript client.
 navigation: false
 seo:
-  title: Sockudo Documentation
+  title: "Sockudo — Production-Ready Realtime Infrastructure"
   description: Production docs for sockudo and @sockudo/client. Setup, API, integrations, and advanced features.
 ogImage:
   component: Sockudo
   props:
-    title: "Sockudo Documentation"
-    description: "Drop-in Pusher replacement built in Rust. Own your WebSocket infrastructure with enterprise-grade performance."
+    title: "Production-Ready Realtime Infrastructure"
+    description: "Drop-in Pusher replacement built in Rust"
 ---
 
 ::u-page-hero
