@@ -1,4 +1,8 @@
 export default defineNuxtConfig({
+  image: {
+    provider: "none",
+  },
+
   site: {
     url: "https://sockudo.io",
   },
