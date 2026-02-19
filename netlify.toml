@@ -1,7 +1,7 @@
 [build]
 command = "bun run build"
-publish = "dist"
+publish = ".output/public"
 
 [build.environment]
 NODE_VERSION = "22"
-NITRO_PRESET = "netlify_static"
+NITRO_PRESET = "netlify"
