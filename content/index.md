@@ -45,6 +45,9 @@ Drop-in Pusher replacement built in Rust. Own your WebSocket infrastructure with
   size: xl
   to: /getting-started/installation
   trailing-icon: i-lucide-rocket
+  ui:
+    leadingIcon: scale-80
+    trailingIcon: scale-80
   ---
   Get Started
   :::
@@ -57,6 +60,9 @@ Drop-in Pusher replacement built in Rust. Own your WebSocket infrastructure with
   to: https://github.com/sockudo/sockudo
   variant: outline
   target: _blank
+  ui:
+    leadingIcon: scale-80
+    trailingIcon: scale-80
   ---
   Star on GitHub
   :::
@@ -68,6 +74,9 @@ Drop-in Pusher replacement built in Rust. Own your WebSocket infrastructure with
   size: xl
   to: /getting-started/introduction
   variant: ghost
+  ui:
+    leadingIcon: scale-80
+    trailingIcon: scale-80
   ---
   Documentation
   :::
@@ -87,6 +96,7 @@ Built for teams that need control, performance, and advanced features beyond bas
   :::u-page-feature
   ---
   icon: i-lucide-zap
+  orientation: vertical
   ---
   #title
   Blazing Fast
@@ -98,6 +108,7 @@ Built for teams that need control, performance, and advanced features beyond bas
   :::u-page-feature
   ---
   icon: i-lucide-repeat
+  orientation: vertical
   ---
   #title
   Drop-in Compatible
@@ -109,6 +120,7 @@ Built for teams that need control, performance, and advanced features beyond bas
   :::u-page-feature
   ---
   icon: i-lucide-sparkles
+  orientation: vertical
   ---
   #title
   Advanced Features
@@ -120,6 +132,7 @@ Built for teams that need control, performance, and advanced features beyond bas
   :::u-page-feature
   ---
   icon: i-lucide-shield-check
+  orientation: vertical
   ---
   #title
   Production Ready
@@ -131,6 +144,7 @@ Built for teams that need control, performance, and advanced features beyond bas
   :::u-page-feature
   ---
   icon: i-lucide-database
+  orientation: vertical
   ---
   #title
   Flexible Storage
@@ -142,6 +156,7 @@ Built for teams that need control, performance, and advanced features beyond bas
   :::u-page-feature
   ---
   icon: i-lucide-code-2
+  orientation: vertical
   ---
   #title
   Developer Friendly
@@ -165,6 +180,7 @@ Everything you need to build production-grade realtime applications.
   :::u-page-feature
   ---
   icon: i-lucide-layers
+  orientation: vertical
   to: /getting-started/introduction
   ---
   #title
@@ -177,6 +193,7 @@ Everything you need to build production-grade realtime applications.
   :::u-page-feature
   ---
   icon: i-lucide-diff
+  orientation: vertical
   to: /server/delta-compression
   ---
   #title
@@ -189,6 +206,7 @@ Everything you need to build production-grade realtime applications.
   :::u-page-feature
   ---
   icon: i-lucide-filter
+  orientation: vertical
   to: /server/tag-filtering
   ---
   #title
@@ -201,6 +219,7 @@ Everything you need to build production-grade realtime applications.
   :::u-page-feature
   ---
   icon: i-lucide-gauge
+  orientation: vertical
   to: /server/scaling
   ---
   #title
@@ -213,6 +232,7 @@ Everything you need to build production-grade realtime applications.
   :::u-page-feature
   ---
   icon: i-lucide-lock
+  orientation: vertical
   to: /server/security
   ---
   #title
@@ -225,6 +245,7 @@ Everything you need to build production-grade realtime applications.
   :::u-page-feature
   ---
   icon: i-lucide-activity
+  orientation: vertical
   to: /server/observability
   ---
   #title
@@ -249,6 +270,7 @@ Three ways to run Sockudo, from Docker compose to production clusters.
   :::u-page-feature
   ---
   icon: i-simple-icons-docker
+  orientation: vertical
   to: /getting-started/installation#option-1-docker-fastest
   ---
   #title
@@ -261,6 +283,7 @@ Three ways to run Sockudo, from Docker compose to production clusters.
   :::u-page-feature
   ---
   icon: i-simple-icons-rust
+  orientation: vertical
   to: /getting-started/installation#option-2-cargo-binstall-precompiled-binary
   ---
   #title
@@ -273,6 +296,7 @@ Three ways to run Sockudo, from Docker compose to production clusters.
   :::u-page-feature
   ---
   icon: i-lucide-code
+  orientation: vertical
   to: /getting-started/installation#option-3-build-from-source
   ---
   #title
@@ -297,6 +321,7 @@ Official JavaScript Client
   :::u-page-feature
   ---
   icon: i-lucide-filter
+  orientation: vertical
   to: /client/official-client-features#tag-filtering-subscribe-api
   ---
   #title
@@ -309,6 +334,7 @@ Official JavaScript Client
   :::u-page-feature
   ---
   icon: i-lucide-package
+  orientation: vertical
   to: /client/official-client-features#delta-compression-global-enable
   ---
   #title
@@ -321,6 +347,7 @@ Official JavaScript Client
   :::u-page-feature
   ---
   icon: i-lucide-plug
+  orientation: vertical
   to: /integrations/laravel-echo
   ---
   #title
@@ -345,6 +372,7 @@ Connect Sockudo with your existing tools and frameworks.
   :::u-page-feature
   ---
   icon: i-simple-icons-laravel
+  orientation: vertical
   to: /integrations/laravel-echo
   ---
   #title
@@ -357,6 +385,7 @@ Connect Sockudo with your existing tools and frameworks.
   :::u-page-feature
   ---
   icon: i-lucide-radio-tower
+  orientation: vertical
   to: /integrations/pusher-js
   ---
   #title
@@ -369,6 +398,7 @@ Connect Sockudo with your existing tools and frameworks.
   :::u-page-feature
   ---
   icon: i-lucide-webhook
+  orientation: vertical
   to: /integrations/backend-sdks
   ---
   #title
@@ -381,6 +411,7 @@ Connect Sockudo with your existing tools and frameworks.
   :::u-page-feature
   ---
   icon: i-lucide-container
+  orientation: vertical
   to: /server/scaling
   ---
   #title
@@ -393,6 +424,7 @@ Connect Sockudo with your existing tools and frameworks.
   :::u-page-feature
   ---
   icon: i-lucide-database
+  orientation: vertical
   to: /server/app-managers
   ---
   #title
@@ -405,6 +437,7 @@ Connect Sockudo with your existing tools and frameworks.
   :::u-page-feature
   ---
   icon: i-lucide-cloud
+  orientation: vertical
   to: /server/queue
   ---
   #title
